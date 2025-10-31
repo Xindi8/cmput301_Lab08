@@ -12,10 +12,10 @@ public class CustomList {
 
     public boolean hasCity(City city) { return cities.contains(city); }
 
-    //public void deleteCity(City city) {
-      //  boolean removed = cities.remove(city);
-        //if (!removed) throw new IllegalArgumentException("City not found: " + city);
-    //}
+    public void deleteCity(City city) {
+        boolean removed = cities.remove(city);
+        if (!removed) throw new IllegalArgumentException("City not found: " + city);
+    }
 
     public int countCities() { return cities.size(); }
 }
