@@ -17,5 +17,5 @@ public class CustomList {
         if (!removed) throw new IllegalArgumentException("City not found: " + city);
     }
 
-    public int countCities() { return cities.size(); }
+    //public int countCities() { return cities.size(); }
 }
